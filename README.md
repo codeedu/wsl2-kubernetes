@@ -52,7 +52,7 @@ minikube start --driver=docker
 
 Acontecerá um erro na inicialização.
 
-Imagem.
+![Erro ao inicializar o Minikube](img/minikube-start-error.png)
 
 Exclua o nó minikube com o comando:
 ```sh
@@ -81,7 +81,7 @@ Execute o comando:
 ```sh
 kubectl get nodes
 ```
-Imagem
+![Verificando nó minikube](img/kubectl-get-nodes.png)
 
 ### Rode o Kubernetes Dashboard
 
@@ -91,8 +91,11 @@ Execute o comando:
 minikube dashboard
 ```
 Acesse o endereço que será mostrado no log do terminal.
+![Verificando nó minikube](img/minikube-dashboard.png)
+![Kubernetes Dashboard](img/kubernetes-dashboard.png)
 
 
+## Dicas
 
-
-Para trabalhar com o Kubernetes é necessário sempre que o serviço do Minikube esteja ativo. 
+* Quando não estiver usando minikube/kubernetes execute ```minikube stop``` para parar o processo do Minikube. Isto economizará processamento e memória.
+* Das próximas vezes que necessitar iniciar o Minikube execute ```minikube start```.
